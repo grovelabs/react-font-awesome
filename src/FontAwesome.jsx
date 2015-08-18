@@ -54,10 +54,10 @@ const FontAwesome = React.createClass({
   },
 
   render() {
-    const { name, style } = this.props;
+    const { name, style, ...others } = this.props;
     // Get the hex number from the string, then unicode encode it
     const icon = String.fromCodePoint( parseInt(hexCodes[name], 16) );
-    return <span style={[faStyle, style]}>{icon}</span>;
+    return <span style={[faStyle, style]} {...others}>{icon}</span>;
   },
 });
 
