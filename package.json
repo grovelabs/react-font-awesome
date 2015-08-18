@@ -1,6 +1,6 @@
 {
   "name": "@grove/react-font-awesome",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A completely contained Font Awesome React component",
   "main": "lib/FontAwesome.js",
   "scripts": {
