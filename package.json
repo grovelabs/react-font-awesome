@@ -1,0 +1,43 @@
+{
+  "name": "react-font-awesome",
+  "version": "1.0.0",
+  "description": "A completely contained Font Awesome React component",
+  "main": "lib/FontAwesome.js",
+  "scripts": {
+    "compile": "npm run lint && babel --optional runtime -sd lib/ src/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run compile",
+    "lint": "eslint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grovelabs/react-font-awesome.git"
+  },
+  "keywords": [
+    "react",
+    "fontawesome",
+    "font",
+    "awesome",
+    "fa",
+    "icon",
+    "icons"
+  ],
+  "author": "software@grovelabs.io",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^0.13.3",
+    "radium": "^0.13.7",
+    "babel-runtime": "^5.8.20"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-eslint": "^4.0.10",
+    "eslint": "^1.1.0",
+    "eslint-config-airbnb": "0.0.7",
+    "eslint-plugin-react": "^3.2.3"
+  },
+  "bugs": {
+    "url": "https://github.com/grovelabs/react-font-awesome/issues"
+  },
+  "homepage": "https://github.com/grovelabs/react-font-awesome#readme"
+}
