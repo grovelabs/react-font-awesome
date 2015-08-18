@@ -1,3 +1,5 @@
+/* eslint dot-notation:0 */
+
 const hexCodes = {
   '500px': 'f26e',
   'adjust': 'f042',
