@@ -43,7 +43,10 @@ function writeFontFace() {
 const FontAwesome = React.createClass({
   propTypes: {
     name: PropTypes.oneOf(Object.keys(hexCodes)).isRequired,
-    style: PropTypes.object,
+    style: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.array,
+    ]),
   },
 
   componentWillMount() {
@@ -57,7 +60,7 @@ const FontAwesome = React.createClass({
     const { name, style, ...others } = this.props;
     // Get the hex number from the string, then unicode encode it
     const icon = String.fromCodePoint( parseInt(hexCodes[name], 16) );
-    return <span style={[faStyle, style]} {...others}>{icon}</span>;
+    return <i style={[faStyle, ...style]} {...others}>{icon}</i>;
   },
 });
 
