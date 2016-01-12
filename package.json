@@ -1,6 +1,6 @@
 {
   "name": "@grove/react-font-awesome",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "A completely contained Font Awesome React component",
   "main": "lib/FontAwesome.js",
   "scripts": {
@@ -25,8 +25,8 @@
   "author": "software@grovelabs.io",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^0.13.0 || ^0.14.0",
-    "radium": "^0.13.0 || ^0.14.0",
+    "react": "^0.x",
+    "radium": "^0.x",
     "babel-runtime": "^5.8.0"
   },
   "devDependencies": {
